@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+.landpage {
+  padding-left: 200px;
+  padding-right: 200px;
+  background-image: url("./images/background.png");
+  width: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+nav {
+  padding-top: 40px;
+  width: 100%;
+  height: 100px;
+}
+nav > span {
+  color: white;
+  width: fit-content;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-theme-change {
+  display: flex;
+  height: 30px;
+  width: 60px;
+  border-radius: 100px;
+  background-color: white;
+  margin-left: auto;
+  align-items: center;
+}
+.nav-wrapper-2 {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 15px;
+  font-size: 18px;
+}
+.nav-wrapper-1 {
+  display: flex;
+  gap: 45px;
+  font-size: 16px;
+}
+.nav-theme-change-btn {
+  background-color: black;
+  height: 25px;
+  margin-left: 5px;
+  width: 25px;
+  border-radius: 100px;
+}
+.nav-theme-change-btn:hover {
+  background-color: rgb(53, 52, 52);
+  cursor: pointer;
+}
+.nav-about-me:hover {
+  cursor: pointer;
+  color: rgb(218, 214, 214);
+}
+.nav-skills:hover {
+  cursor: pointer;
+  color: rgb(218, 214, 214);
+}
+.nav-projects:hover {
+  cursor: pointer;
+  color: rgb(218, 214, 214);
+}
+.nav-contact:hover {
+  cursor: pointer;
+  color: rgb(218, 214, 214);
+}
+.nav-language-btn:hover {
+  cursor: pointer;
+  color: rgb(218, 214, 214);
+}
+#personal-pic {
+  width: 400px;
+  height: 425px;
+  margin-left: auto;
+  align-self: flex-end;
+  position: relative;
+  top: 10%;
+}
+.floating-circle-large1 {
+  position: relative;
+  background-color: white;
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  left: 95%;
+}
+.floating-circle-large2 {
+  position: relative;
+  background-color: white;
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  left: 90%;
+  bottom: 67%;
+}
+.floating-circle-small {
+  position: relative;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  left: 100%;
+  bottom: 10%;
+}

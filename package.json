@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "jquery": "^3.6.1"
+  },
+  "devDependencies": {
+    "snowpack": "^3.8.8"
+  }
+}
