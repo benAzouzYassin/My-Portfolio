@@ -59,28 +59,28 @@ nav {
   border-radius: 100px;
 }
 .nav-theme-change-btn:hover {
-  background-color: rgb(53, 52, 52);
+  background-color: rgb(147, 147, 147);
   cursor: pointer;
 }
 .nav-about-me:hover {
   cursor: pointer;
-  color: rgb(218, 214, 214);
+  color: rgb(107, 101, 101);
 }
 .nav-skills:hover {
   cursor: pointer;
-  color: rgb(218, 214, 214);
+  color: rgb(107, 101, 101);
 }
 .nav-projects:hover {
   cursor: pointer;
-  color: rgb(218, 214, 214);
+  color: rgb(107, 101, 101);
 }
 .nav-contact:hover {
   cursor: pointer;
-  color: rgb(218, 214, 214);
+  color: rgb(107, 101, 101);
 }
 .nav-language-btn:hover {
   cursor: pointer;
-  color: rgb(218, 214, 214);
+  color: rgb(107, 101, 101);
 }
 #personal-pic {
   width: 400px;
@@ -90,29 +90,78 @@ nav {
   position: relative;
   top: 10%;
 }
-.floating-circle-large1 {
+.large-circle-1 {
   position: relative;
-  background-color: white;
-  width: 80px;
-  height: 80px;
-  border-radius: 100px;
-  left: 95%;
+  left: 97%;
+  bottom: 50%;
 }
-.floating-circle-large2 {
+.large-circle-2 {
   position: relative;
-  background-color: white;
-  width: 80px;
-  height: 80px;
-  border-radius: 100px;
-  left: 90%;
-  bottom: 67%;
+  left: 93%;
+  bottom: 5%;
 }
-.floating-circle-small {
+.small-circle {
   position: relative;
+  left: 97%;
+  bottom: 5%;
+}
+.square-medium {
+  position: relative;
+  left: 60%;
+  bottom: 25%;
+}
+.square-small {
+  position: relative;
+  left: 58%;
+  bottom: 80%;
+}
+.paragraph {
+  position: absolute;
+  top: 30%;
+  width: 42%;
+  color: white;
+  font-weight: 400;
+  font-size: 50px;
+}
+
+/**section 2 css**/
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.skills {
+  position: relative;
+  padding-left: 200px;
+  padding-right: 200px;
+  height: 100vh;
+  width: auto;
+  background-color: #161515;
+  display: flex;
+  flex-direction: column;
+}
+.skills-title {
+  color: white;
+  margin-left: auto;
+  font-weight: 500;
+  font-size: 65px;
+  font-family: poppins;
+  margin-right: auto;
+}
+.skills-wrapper {
+  margin-top: 150px;
+  width: 100%;
+  height: 50%;
+  gap: 1.4%;
+  display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+}
+.skills-wrapper > span {
+  width: 90%;
+  border-radius: 30px;
+  height: 150px;
   background-color: white;
-  width: 40px;
-  height: 40px;
-  border-radius: 100px;
-  left: 100%;
-  bottom: 10%;
 }
