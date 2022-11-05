@@ -9,95 +9,99 @@
 </head>
 
 <body>
-  <!--landpage-->
-  <section class="landpage">
-    <nav>
+  <div class="container">
+
+    <nav class="navbar normal-mode">
       <span class="nav-wrapper-1">
-        <span class="nav-about-me">About me</span>
-        <span class="nav-skills">Skills</span>
-        <span class="nav-projects">Projects</span>
-        <span class="nav-contact">Contact</span>
+        <a href="#about-me-section" class="nav-about-me" id="about-me-link">About me</a>
+        <a href="#skills" class="nav-skills" id="skills-link">Skills</a>
+        <a href="#projects" class="nav-projects" id="project-link">Projects</a>
+        <a href="#contact" class="nav-contact" id="contact-link">Contact</a>
       </span>
       <span class="nav-wrapper-2">
-        <span class="nav-language-btn">EN</span>
+        <span class="nav-language-btn" id="lang-changer">EN</span>
         <div class="nav-theme-change">
           <span class="nav-theme-change-btn"></span>
         </div>
       </span>
     </nav>
-    <p class="paragraph">
-      Welcome to my portfolio! I’m yassine ben azouz an IT student and future
-      engineer .
-    </p>
-    <img src="./images/personal pic.png" alt="" id="personal-pic" />
-    <img src="./images/large-circle.png" width="80px" class="large-circle-1" />
-    <img src="./images/large-circle.png" width="80px" class="large-circle-2" />
-    <img src="./images/small-circle.png" width="40px" class="small-circle" />
-    <img src="./images/square-medium.png" alt="" class="square-medium" width="70px" />
-    <img src="./images/square-small.png" alt="" class="square-small" width="50px" />
-  </section>
-  <!--My skills section-->
-  <section class="skills">
-    <div class="wave">
-      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path
-          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-          class="shape-fill"></path>
-      </svg>
-    </div>
-    <h1 class="section-title">MY SKILLS</h1>
-    <div class="skills-wrapper">
-      <span class="skill-1"><img src="./images/html-logo.png" /></span>
-      <span class="skill-2"><img src="./images/css-logo.png" alt="" id="css-logo" /></span>
-      <span class="skill-3"><img src="./images/js-logo.png" alt="" /></span>
-      <span class="skill-4"><img src="./images/react-logo.png" alt="" /></span>
-      <span class="skill-5"><img src="./images/python-logo.png" alt="" /></span>
-    </div>
-    <div class="wave-2">
-      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path
-          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-          class="shape-fill"></path>
-      </svg>
-      </svg>
-    </div>
-  </section>
-  <!--My projects section-->
-  <section class="projects-section">
-    <h1 class="projects-title">MY PROJECTS</h1>
-    <div class="projects">
-      <div class="project-1 project">
-        <div class="project-content">
-          <span class="project-title">project 1 </span>
-          <button class="live-demo-btn">LIVE DEMO</button>
-          <button class="source-code-btn">SOURCE CODE</button>
-        </div>
-        <div class="project-img-1"></div>
-      </div>
+    <!--landpage-->
+    <div class="reference"></div>
+    <section class="landpage" id="about-me-section">
 
-      <div class="project-2 project">
-        <div class="project-img-2"></div>
-        <div class="project-content">
-          <span class="project-title">project 2 </span>
-          <button class="live-demo-btn">LIVE DEMO</button>
-          <button class="source-code-btn">SOURCE CODE</button>
-        </div>
+      <p class="paragraph">
+        Welcome to my portfolio! I’m yassine ben azouz an IT student and future
+        engineer .
+      </p>
+      <img src="./images/personal pic.png" alt="" id="personal-pic" />
+      <img src="./images/large-circle.png" width="80px" class="large-circle-1" />
+      <img src="./images/large-circle.png" width="80px" class="large-circle-2" />
+      <img src="./images/small-circle.png" width="40px" class="small-circle" />
+      <img src="./images/square-medium.png" alt="" class="square-medium" width="70px" />
+      <img src="./images/square-small.png" alt="" class="square-small" width="50px" />
+    </section>
+    <!--My skills section-->
+    <section class="skills" id="skills">
+      <div class="wave">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"></path>
+        </svg>
       </div>
+      <h1 class="section-title">MY SKILLS</h1>
+      <div class="skills-wrapper">
+        <span class="skill-1"><img src="./images/html-logo.png" /></span>
+        <span class="skill-2"><img src="./images/css-logo.png" alt="" id="css-logo" /></span>
+        <span class="skill-3"><img src="./images/js-logo.png" alt="" /></span>
+        <span class="skill-4"><img src="./images/react-logo.png" alt="" /></span>
+        <span class="skill-5"><img src="./images/python-logo.png" alt="" /></span>
+      </div>
+      <div class="wave-2">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"></path>
+        </svg>
+        </svg>
+      </div>
+    </section>
+    <!--My projects section-->
+    <section class="projects-section" id="projects">
+      <h1 class="projects-title">MY PROJECTS</h1>
+      <div class="projects">
+        <div class="project-1 project">
+          <div class="project-content">
+            <span class="project-title">project 1 </span>
+            <button class="live-demo-btn">LIVE DEMO</button>
+            <button class="source-code-btn">SOURCE CODE</button>
+          </div>
+          <div class="project-img-1"></div>
+        </div>
 
-      <div class="project-3 project">
-        <div class="project-content">
-          <span class="project-title">project 3 </span>
-          <button class="live-demo-btn">LIVE DEMO</button>
-          <button class="source-code-btn">SOURCE CODE</button>
+        <div class="project-2 project">
+          <div class="project-img-2"></div>
+          <div class="project-content">
+            <span class="project-title">project 2 </span>
+            <button class="live-demo-btn">LIVE DEMO</button>
+            <button class="source-code-btn">SOURCE CODE</button>
+          </div>
         </div>
-        <div class="project-img-3"></div>
+
+        <div class="project-3 project">
+          <div class="project-content">
+            <span class="project-title">project 3 </span>
+            <button class="live-demo-btn">LIVE DEMO</button>
+            <button class="source-code-btn">SOURCE CODE</button>
+          </div>
+          <div class="project-img-3"></div>
+        </div>
       </div>
-    </div>
-  </section>
-  <!--contact section-->
+    </section>
+    <!--contact section-->
 
   </div>
-  <section id="contact-section">
+  <section class="contact-section" id="contact">
     <div class="wave-3">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path
@@ -114,13 +118,23 @@
       <div class="contact-with-email item"><img src="./images/email-big.png" width="100px" alt=""><span id="my-email">
           yassinebenazouz123@gmail.com </span></div>
       <div class="contact-with-linkedin item"><img src="./images/linkedin-big.png" width="100px" alt=""><a
-          href="https://www.linkedin.com/in/yassine-benazouz-724782242/" target="_blank" id="linkedin-link">yassine
+          href="https://www.linkedin.com/in/yassine-benazouz-724782242/" target="_blank" id="linkedin-link"
+          title="my linkedin link">yassine
           benazouz</a></div>
 
     </div>
   </section>
   <!--footer-->
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <span>Designed/Made with</span><img src="./images/small-heart.png" width="20px" alt=""><span>by yassine ben
+      azouz</span>
+    <div class="footer-contacts">
+      <img src="./images/github small.png" width="40px" alt="">
+      <img src="./images/email-small.png" width="40px" alt="">
+      <img src="./images/linkedin-small.png" width="40px" alt="">
+    </div>
+  </footer>
+  </div>
 </body>
 
 </html>

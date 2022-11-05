@@ -16,19 +16,6 @@
   flex-direction: column;
   position: relative;
 }
-nav {
-  padding-top: 40px;
-  width: 100%;
-  height: 100px;
-}
-nav > span {
-  color: white;
-  width: fit-content;
-}
-nav {
-  display: flex;
-  align-items: center;
-}
 
 .nav-theme-change {
   display: flex;
@@ -310,7 +297,7 @@ nav {
   height: 100%;
   background-color: rgb(36, 18, 239);
 }
-#contact-section {
+.contact-section {
   position: relative;
   width: auto;
   height: 750px;
@@ -366,8 +353,12 @@ nav {
   font-weight: 600;
   margin-top: -40px;
 }
+#linkedin-link:hover {
+  cursor: pointer;
+  color: #7e7676;
+}
 #my-email {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
   margin-top: -40px;
 }
@@ -377,8 +368,70 @@ nav {
   margin-top: -40px;
 }
 .footer {
+  padding-left: 100px;
+  padding-right: 100px;
+  height: 70px;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+.footer > span {
+  font-size: 17px;
+  font-weight: 600;
+}
+.footer-contacts {
+  margin-left: auto;
+}
+.footer-contacts > img:hover {
+  cursor: pointer;
+}
+a {
+  all: unset;
+}
+body {
+  position: relative;
+}
+
+.nav-normal-mode {
   padding-left: 200px;
   padding-right: 200px;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-image: url(./images/background.png);
+  padding-top: 25px;
+  display: flex;
+  align-items: center;
+  width: 100%;
   height: 100px;
-  width: auto;
+  transition: 0.5s ease;
+}
+.nav-scrolling-mode {
+  padding-left: 200px;
+  padding-right: 200px;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  padding-top: 0px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  transition: 0.7s ease;
+  background-color: rgb(255, 255, 255);
+}
+.nav-normal-mode > span {
+  color: white;
+  width: fit-content;
+}
+.nav-scrolling-mode > span {
+  color: black;
+  width: fit-content;
+}
+.nav-scrolling-mode .nav-theme-change-btn {
+  background-color: white;
+}
+.nav-scrolling-mode .nav-theme-change {
+  background-color: black;
 }
