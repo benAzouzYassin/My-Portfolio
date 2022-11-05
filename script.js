@@ -35,3 +35,5 @@ const observer = new IntersectionObserver(entries => {
     })
 })
 observer.observe(reference)
+let projects = document.querySelectorAll(".project")
+console.log(projects)
