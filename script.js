@@ -23,8 +23,8 @@ $("#contact-link").on("click", function (event) {
     smoothScroll(this, 1400)
 });
 /////////////////////
-let reference = document.querySelector(".reference")
-let nav = document.querySelector("nav")
+const reference = document.querySelector(".reference")
+const nav = document.querySelector("nav")
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -35,5 +35,16 @@ const observer = new IntersectionObserver(entries => {
     })
 })
 observer.observe(reference)
-let projects = document.querySelectorAll(".project")
-console.log(projects)
+/////////////////////////////////////////////
+const projects = document.querySelectorAll(".project")
+
+const projectsObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show-project")
+        }
+    })
+})
+projects.forEach(project => {
+    projectsObserver.observe(project)
+})

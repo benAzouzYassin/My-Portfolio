@@ -396,7 +396,7 @@ body {
   align-items: center;
   width: 100%;
   height: 100px;
-  transition: 0.5s ease;
+  transition: 0.7s ease-in-out;
 }
 .nav-scrolling-mode {
   padding-left: 200px;
@@ -456,4 +456,21 @@ body {
   overflow: hidden;
   text-align: center;
   transform: rotateY(180deg);
+}
+.hidden {
+  filter: blur(15x);
+  opacity: 0;
+  transition: all 1.5s;
+  transform: translateX(-30%);
+}
+.show-project {
+  filter: blur(0px);
+  opacity: 1;
+  transform: translateX(0);
+}
+.project:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.project:nth-child(3) {
+  transition-delay: 0.4s;
 }
