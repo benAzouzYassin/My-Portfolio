@@ -42,9 +42,15 @@ const projectsObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add("show-project")
+            entry.target.classList.remove("hidden-1")
         }
     })
 })
 projects.forEach(project => {
     projectsObserver.observe(project)
+})
+
+const skillCards = document.querySelectorAll(".skill-card")
+skillCards.forEach(card => {
+    projectsObserver.observe(card)
 })
