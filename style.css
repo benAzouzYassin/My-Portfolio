@@ -26,13 +26,7 @@
   margin-left: auto;
   align-items: center;
 }
-.nav-wrapper-2 {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  gap: 15px;
-  font-size: 18px;
-}
+
 .nav-wrapper-1 {
   display: flex;
   gap: 45px;
@@ -65,10 +59,7 @@
   cursor: pointer;
   color: rgb(107, 101, 101);
 }
-.nav-language-btn:hover {
-  cursor: pointer;
-  color: rgb(107, 101, 101);
-}
+
 #personal-pic {
   width: 400px;
   height: 425px;
@@ -292,7 +283,7 @@
 .contact-section {
   position: relative;
   width: auto;
-  height: 750px;
+  height: 740px;
   background-color: #515050;
   padding-left: 200px;
   padding-right: 200px;
@@ -441,22 +432,12 @@ body {
   transition: all 0.8s ease;
 }
 
-.skill-card:hover {
-  transform: rotateY(180deg);
-}
-
 .card-front {
   position: absolute;
   backface-visibility: hidden;
   overflow: hidden;
 }
-.card-back {
-  position: absolute;
-  backface-visibility: hidden;
-  overflow: hidden;
-  text-align: center;
-  transform: rotateY(180deg);
-}
+
 .hidden-1 {
   opacity: 0;
   transition: all 1.5s;
@@ -472,7 +453,7 @@ body {
   transition: all 1.5s;
   transform: translateX(-30%);
 }
-.show-project {
+.show-animation {
   opacity: 1;
   transform: translateX(0);
 }
@@ -497,4 +478,22 @@ body {
 }
 .skill-card:nth-child(5) {
   transition-delay: 0.1s;
+}
+
+.skill-card:hover {
+  cursor: pointer;
+}
+.card-front {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#my-email:hover {
+  cursor: pointer;
+  color: #7e7676;
+}
+.pointer:hover {
+  cursor: pointer;
 }

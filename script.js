@@ -23,7 +23,7 @@ $("#contact-link").on("click", function (event) {
     smoothScroll(this, 1400)
 });
 /////////////////////
-const reference = document.querySelector(".reference")
+const reference = document.querySelector(".reference")//reference for starting the navbar animation
 const nav = document.querySelector("nav")
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -36,21 +36,48 @@ const observer = new IntersectionObserver(entries => {
 })
 observer.observe(reference)
 /////////////////////////////////////////////
-const projects = document.querySelectorAll(".project")
 
-const projectsObserver = new IntersectionObserver(entries => {
+const animationObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.classList.add("show-project")
+            entry.target.classList.add("show-animation")
             entry.target.classList.remove("hidden-1")
         }
     })
 })
+////////////////////////projects animation////////////////////////////////
+const projects = document.querySelectorAll(".project")
 projects.forEach(project => {
-    projectsObserver.observe(project)
+    animationObserver.observe(project)
 })
-
+///////////////////////skill cards animation///////////////////////////
 const skillCards = document.querySelectorAll(".skill-card")
 skillCards.forEach(card => {
-    projectsObserver.observe(card)
+    animationObserver.observe(card)
 })
+//////////////////////contacts cards animation///////////////////////
+const contacts = document.querySelectorAll(".contact")
+contacts.forEach(contact => {
+    animationObserver.observe(contact)
+})
+/////////////////////////////////////////////////////////////////
+const htmlCard = document.querySelector(".html")
+htmlCard.onclick = () => {
+    window.open("https://developer.mozilla.org/en-US/docs/Web/HTML", "_blank")
+}
+const cssCard = document.querySelector(".css")
+cssCard.onclick = () => {
+    window.open("https://developer.mozilla.org/en-US/docs/Web/CSS", "_blank")
+}
+const jsCard = document.querySelector(".js")
+jsCard.onclick = () => {
+    window.open("https://developer.mozilla.org/en-US/docs/Web/JavaScript", "_blank")
+}
+const reactCard = document.querySelector(".react")
+reactCard.onclick = () => {
+    window.open("https://en.wikipedia.org/wiki/React_(JavaScript_library)", "_blank")
+}
+const pythonCard = document.querySelector(".python")
+pythonCard.onclick = () => {
+    window.open("https://en.wikipedia.org/wiki/Python_(programming_language)", "_blank")
+}
