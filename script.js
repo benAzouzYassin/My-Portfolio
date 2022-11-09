@@ -81,3 +81,16 @@ const pythonCard = document.querySelector(".python")
 pythonCard.onclick = () => {
     window.open("https://en.wikipedia.org/wiki/Python_(programming_language)", "_blank")
 }
+
+
+///////////////////////////////////////
+
+const navOpener = document.querySelector("#navOpen")
+navOpener.onclick = () => {
+    document.getElementById("sidenav").style.width = "250px";
+
+}
+const navCloser = document.querySelector(".closebtn")
+navCloser.onclick = () => {
+    document.getElementById("sidenav").style.width = "0";
+}

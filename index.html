@@ -12,17 +12,30 @@
 
 <body>
   <div class="container">
+    <span style="font-size:30px;cursor:pointer;" id="navOpen">&#9776; open</span>
 
     <nav class="navbar normal-mode">
       <span class="nav-wrapper-1">
+
         <a href="#about-me-section" class="nav-about-me" id="about-me-link">About me</a>
         <a href="#skills" class="nav-skills" id="skills-link">Skills</a>
         <a href="#projects" class="nav-projects" id="project-link">Projects</a>
         <a href="#contact" class="nav-contact" id="contact-link">Contact</a>
+
       </span>
   </div>
   </span>
+
   </nav>
+  <div id="sidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn">&times;</a>
+    <a href="#about-me-section" class="nav-about-me" id="about-me-link">About me</a>
+    <a href="#skills" class="nav-skills" id="skills-link">Skills</a>
+    <a href="#projects" class="nav-projects" id="project-link">Projects</a>
+    <a href="#contact" class="nav-contact" id="contact-link">Contact</a>
+  </div>
+
+
   <!--landpage-->
   <div class="reference"></div>
   <section class="landpage" id="about-me-section">
@@ -82,29 +95,32 @@
     <div class="projects">
       <div class="project-1 project hidden-3">
         <div class="project-content">
-          <span class="project-title">project 1 </span>
-          <button class="live-demo-btn">LIVE DEMO</button>
-          <button class="source-code-btn">SOURCE CODE</button>
+          <span class="project-title">Products Management System </span>
+          <a href="https://jscruds.netlify.app/" target="_blank" class="live-demo-btn">LIVE DEMO</a>
+          <a href="https://github.com/benAzouzYassin/product-management-system-CRUD" target="_blank"
+            class="source-code-btn">SOURCE CODE</a>
         </div>
-        <div class="project-img-1"></div>
+        <div class="project-img-1"><img src="./images/js crud.png" alt=""></div>
       </div>
 
       <div class="project-2 project hidden-2">
-        <div class="project-img-2"></div>
+        <div class="project-img-2"><img src="./images/weather checker.png" alt=""></div>
         <div class="project-content ">
-          <span class="project-title">project 2 </span>
-          <button class="live-demo-btn">LIVE DEMO</button>
-          <button class="source-code-btn">SOURCE CODE</button>
+          <span class="project-title">Weather Checker</span>
+          <a class="live-demo-btn" href="https://cityweatherchecker123.netlify.app/" target="_blank">LIVE DEMO</a>
+          <a class="source-code-btn" href="https://github.com/benAzouzYassin/weather-checker" target="_blank">SOURCE
+            CODE</a>
         </div>
       </div>
 
       <div class="project-3 project hidden-3">
         <div class="project-content ">
-          <span class="project-title">project 3 </span>
-          <button class="live-demo-btn">LIVE DEMO</button>
-          <button class="source-code-btn">SOURCE CODE</button>
+          <span class="project-title">Personal Website</span>
+          <a class="live-demo-btn" href="#" target="_blank">LIVE DEMO</a>
+          <a class="source-code-btn" href="https://github.com/benAzouzYassin/My-Portfolio" target="_blank">SOURCE
+            CODE</a>
         </div>
-        <div class="project-img-3"></div>
+        <div class="project-img-3"><img src="./images/web portfolio.png" alt=""></div>
       </div>
     </div>
   </section>
