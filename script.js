@@ -1,4 +1,4 @@
-import $ from "jquery";
+import $ from "./_snowpack/pkg/jquery.js";
 function smoothScroll(element, duration) {
     $("html, body").animate(
         {
