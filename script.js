@@ -81,7 +81,10 @@ const pythonCard = document.querySelector(".python")
 pythonCard.onclick = () => {
     window.open("https://en.wikipedia.org/wiki/Python_(programming_language)", "_blank")
 }
-
+const gitCard = document.querySelector(".git")
+gitCard.onclick = () => {
+    window.open("https://git-scm.com/", "_blank")
+}
 
 ///////////////////////////////////////
 
