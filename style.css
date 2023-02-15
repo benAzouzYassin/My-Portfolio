@@ -302,6 +302,23 @@
   filter: blur(0px);
   transition: ease-in-out;
 }
+.project-img-4 {
+  width: 40%;
+  height: 100%;
+}
+.project-img-4 img {
+  z-index: 5;
+  width: 102%;
+  height: 100%;
+  filter: blur(1px);
+  border-radius: 10px 0px 0px 10px;
+  margin-top: 0 px;
+}
+.project-img-4 img:hover {
+  cursor: pointer;
+  filter: blur(0px);
+  transition: ease-in-out;
+}
 .project-img-3 {
   width: 40%;
   background-color: white;
