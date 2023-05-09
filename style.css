@@ -288,14 +288,18 @@
 .project-img-2 {
   width: 40%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .project-img-2 img {
   z-index: 5;
-  width: 102%;
-  height: 102%;
+  width: 105%;
+  height: 100%;
   filter: blur(1px);
   border-radius: 10px 0px 0px 10px;
   margin-top: -2px;
+  transform: scaleY(103%);
 }
 .project-img-2 img:hover {
   cursor: pointer;
