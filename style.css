@@ -186,7 +186,7 @@
   width: auto;
   border-radius: 20px;
   background-color: white;
-  height: 220px;
+  height: 270px;
   margin-top: 30px;
   display: flex;
 }
@@ -207,7 +207,7 @@
 }
 
 .project-content {
-  width: 60%;
+  width: 65%;
   background-color: white;
   height: 100%;
   border: solid 1px;
@@ -268,7 +268,7 @@
   transition: 0.4s ease-out;
 }
 .project-img-1 {
-  width: 40%;
+  width: 35%;
   height: 100%;
   border-radius: 0px 10px 10px 0px;
 }
@@ -286,7 +286,7 @@
   transition: ease-in-out;
 }
 .project-img-2 {
-  width: 40%;
+  width: 35%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -324,7 +324,7 @@
   transition: ease-in-out;
 }
 .project-img-3 {
-  width: 40%;
+  width: 35%;
   background-color: white;
   height: 100%;
   background-color: rgb(36, 18, 239);
@@ -492,7 +492,7 @@ body {
   align-items: center;
   position: relative;
   transform-style: preserve-3d;
-  transition: all 0.8s ease;
+  transition: all 0.1s ease;
 }
 
 .card-front {
@@ -544,7 +544,9 @@ body {
 }
 
 .skill-card:hover {
+  transition: ease 0.1s;
   cursor: pointer;
+  transform: scale(110%);
 }
 .card-front {
   width: 100%;
