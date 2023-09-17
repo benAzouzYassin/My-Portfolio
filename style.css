@@ -115,7 +115,7 @@
   position: relative;
   padding-left: 200px;
   padding-right: 200px;
-  height: 820px;
+  height: 900px;
   width: auto;
   background-color: #515050;
   display: flex;
@@ -136,7 +136,7 @@
   margin-top: 110px;
   width: 100%;
   height: 50%;
-  gap: 1.4%;
+  gap: 2.4%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   position: relative;
@@ -268,7 +268,7 @@
   transition: 0.4s ease-out;
 }
 .project-img-1 {
-  width: 35%;
+  width: 45%;
   height: 100%;
   border-radius: 0px 10px 10px 0px;
 }
@@ -286,7 +286,7 @@
   transition: ease-in-out;
 }
 .project-img-2 {
-  width: 35%;
+  width: 45%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -307,7 +307,7 @@
   transition: ease-in-out;
 }
 .project-img-4 {
-  width: 40%;
+  width: 45%;
   height: 100%;
 }
 .project-img-4 img {
@@ -324,7 +324,7 @@
   transition: ease-in-out;
 }
 .project-img-3 {
-  width: 35%;
+  width: 45%;
   background-color: white;
   height: 100%;
   background-color: rgb(36, 18, 239);
@@ -542,11 +542,19 @@ body {
 .skill-card:nth-child(5) {
   transition-delay: 0.1s;
 }
+.skill-card:nth-child(6) {
+  transition-delay: 0.3s;
+}
+.skill-card:nth-child(7) {
+  transition-delay: 0.4s;
+}
+.skill-card:nth-child(8) {
+  transition-delay: 0.5s;
+}
 
 .skill-card:hover {
   transition: ease 0.1s;
   cursor: pointer;
-  transform: scale(110%);
 }
 .card-front {
   width: 100%;
